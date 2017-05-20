@@ -45,3 +45,6 @@ def index(request, n):
 
 
     return render(request, 'main/index.html', context)
+
+def home(request):
+    return render(request, 'main/home.html')
