@@ -3,6 +3,9 @@
   padding: inherit;
   font-family: sans-serif;
 }
+img{
+  width: 200px;
+}
 header{
   color: inherit;
 }

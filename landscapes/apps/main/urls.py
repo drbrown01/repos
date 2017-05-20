@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^(?P<n>\d*$)', views.index),
+    url(r'^(?P<n>\d+$)', views.index),
 ]
