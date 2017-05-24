@@ -12,12 +12,12 @@ class Users(models.Model):
     Lname = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
     password = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
 class Secrets(models.Model):
-    author  = models.ForeignKey(Users, related_name="Secrets")
+    # author  = models.ForeignKey(Users, related_name="Secrets")
     secrets = models.CharField(max_length=255)
     likes = models.IntegerField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
