@@ -16,6 +16,7 @@ class Users(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 class Secrets(models.Model):
+    author  = models.ForeignKey(Users, related_name="Secrets")
     secrets = models.CharField(max_length=255)
     likes = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
