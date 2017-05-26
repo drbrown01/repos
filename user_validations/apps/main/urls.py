@@ -5,5 +5,5 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
-    url(r'^process$', views.process),
+    url(r'^create$', views.create),
 ]

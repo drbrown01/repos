@@ -20,8 +20,7 @@
       <div class="col-md-8">
         <fieldset >
           <legend>Validate Yourself!</legend>
-
-            <form class="col-md-12" action="/process" method="post">
+            <form class="col-md-12" action="/create" method="post">
               {% csrf_token %}
               <label for="User Name">User Name</label>
               <input type="text" name="" value="">
@@ -31,8 +30,6 @@
         </fieldset>
         <p>Email Us!: <span class="glyphicon glyphicon-envelope"></span></p>
       </div>
-
-
     </div>
     <footer>
       <a href="#"><p>:User Validation: <span class="glyphicon glyphicon-user"></span></p></a>
