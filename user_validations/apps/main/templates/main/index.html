@@ -2,34 +2,42 @@
 <html>
   <head>
       {% load staticfiles %}
-        <link rel="stylesheet" href="{% static 'main/css/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/bootstrap/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
       <meta charset="utf-8">
     <title>User Validations</title>
   </head>
-  <header>
-    <nav>
-      <ul>
-        <li></li>
+  <header class='container'>
+    <a class='navbar-brand'>User Validation Page</a>
+    <nav data-spy="affix" class='navbar navbar-default navbar-static-top text-center'>
+      <ul class='nav navbar-nav navbar-center'>
+        <li><a href="home">Home</a></li>
       </ul>
     </nav>
   </header>
   <body>
-    <div class="container">
-      <div class="">
-        <fieldset>
+    <div class="container-fluid">
+      <div class="col-md-8">
+        <fieldset >
           <legend>Validate Yourself!</legend>
-          <label for="User Name"></label>
-            <form class="" action="/process" method="post">
+
+            <form class="col-md-12" action="/process" method="post">
               {% csrf_token %}
+              <label for="User Name">User Name</label>
               <input type="text" name="" value="">
-              <input type="submit" name="" value="Validate!">
+
+              <input class="btn btn-danger btn-sm" type="submit" name="" value="Validate!">
             </form>
         </fieldset>
+        <p>Email Us!: <span class="glyphicon glyphicon-envelope"></span></p>
       </div>
 
 
     </div>
+    <footer>
+      <a href="#"><p>:User Validation: <span class="glyphicon glyphicon-user"></span></p></a>
+
+    </footer>
 
   </body>
 </html>
