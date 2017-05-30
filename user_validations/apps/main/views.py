@@ -8,3 +8,4 @@ def create(request):
 
     print request.POST
     return redirect('/')
+  
